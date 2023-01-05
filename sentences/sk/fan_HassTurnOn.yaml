@@ -2,7 +2,9 @@ language: sk
 intents:
   HassTurnOn:
     data:
-    - sentences: []
+    - sentences:
+          - "<turn_on> (ventilátor | [všetky] ventilátory) <area>"
+          - "<turn_on> <area> (ventilátor | [všetky] ventilátory)"   
       slots:
         domain: fan
         name: all
